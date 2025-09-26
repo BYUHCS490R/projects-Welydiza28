@@ -1,0 +1,12 @@
+p {
+    color: blue;
+    font-size: 15pt;
+}
+
+header h1 {
+    color: rgba(50, 100, 70, 10);
+}
+
+main h1 {
+    color: tomato;
+}

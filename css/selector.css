@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header h1 {
+    color: aquamarine;
+}
+
+footer p {
+    color: brown;
+}
+
+#main-1 {
+    color: chartreuse;
+}
+
+#main-2 {
+    color: blue;
+}
+
+#main-3 {
+    color: blueviolet;
+}
+
+#main-4 {
+    color: chocolate;
+}
+
+.crimsom {
+    color: crimson;
+}
+
+.bigger {
+    font-size: 20pt;
+}
+
+.flashier {
+    color: violet;
+    font-size: 14;
+}
+
+.highlight {
+    font-style: italic;
+}
+
+.standout {
+    font-weight: 500;
+}

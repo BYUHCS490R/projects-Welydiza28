@@ -1,0 +1,25 @@
+body{
+    background-color: darkblue;
+    font-family: monospace;
+    color: orange;
+}
+
+#header-1 {
+    font-family: fantasy;
+}
+
+.highlight {
+    font-style: italic;
+}
+
+.subtle {
+    font-size: smaller;
+}
+
+.emphasize{
+    color: rgb(115, 200, 210);
+}
+
+.deemphasize{
+    color: rgb(245, 241, 220);
+}

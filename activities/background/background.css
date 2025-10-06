@@ -1,0 +1,23 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: url('bluebg.jpg') blue; 
+    color: darkred;
+}
+
+header {
+    background: url(orange.jpg) no-repeat top right;
+    /* background-image: url('orange.jpg');
+    background-repeat: no-repeat;
+    background-position: right; */
+}
+
+.mylist {
+    list-style-type: circle;
+    /* list-style-image: url(orange.jpg); */
+}
+
+.other {
+    background-image: url(bluebg.jpg);
+    background-repeat: repeat;
+    background-color: blue;
+}

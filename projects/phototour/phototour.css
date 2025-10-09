@@ -1,0 +1,35 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: url(background.jpg); 
+    color: black;
+}
+
+.standout {
+    font-weight: 500;
+}
+
+.bigger {
+    font-size: 20pt;
+}
+
+.highlight {
+    font-style: italic;
+}
+
+a {
+    color: rgb(214,64,69);
+}
+
+a.active {
+    color: rgb(70,117,153);
+}
+
+.flag {
+    background: url(flag.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.mylist {
+    list-style-image: url(icon.jpg);
+}

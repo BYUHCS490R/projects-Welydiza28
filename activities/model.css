@@ -1,0 +1,38 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: blue;
+    padding: 50px;
+    margin: 25px;
+}
+
+header h1 {
+    background-color: red;
+    border-style: solid;
+    border-color: rgb(255, 0, 251);
+    border-width: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: green;
+    border: 5px dashed red;
+}
+
+main h1 {
+    border: 3px solid red;
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 500px;
+}
+
+main p {
+    border: thick solid black;
+    padding: 10px 20px 30px 40px;
+}
+
+/* You can use em: to use decimal points

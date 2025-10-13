@@ -1,0 +1,29 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 500px;
+}
+
+.temple {
+    border: thin solid black;
+    float: right;
+}
+
+.floater {
+    float: right;
+}
+
+.temple img {
+    position: absolute;
+    top: 0  ;
+}
+
+.stop   {
+    clear: both;
+}
+
+.hammer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+}

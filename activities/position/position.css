@@ -3,6 +3,18 @@ body {
     margin-top: 500px;
 }
 
+nav a {
+    display: block;
+    padding: 10px;
+    background-color: aquamarine;
+    border-bottom: thin solid white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
 .temple {
     border: thin solid black;
     float: right;

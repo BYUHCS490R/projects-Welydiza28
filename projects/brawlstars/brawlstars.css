@@ -1,0 +1,85 @@
+body { font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; background-color: orange; }
+
+header {
+    background-size: cover;
+    background-origin: border-box;
+    background-clip: content-box;
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    font: white;
+}
+
+h1 {
+    color: orange;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+    list-style: none;
+    margin-right: 10px;
+}
+
+nav a {
+    display: block;
+    padding: 10px 20px;
+    background-color: black;
+    color: orange;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: black;
+    color: white;
+}
+
+figure {
+    float: left;
+    width: 300px;
+    margin: 15px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 5px;
+    color: black;
+}
+
+main p {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: justify;
+    text-transform: none;
+    margin: 20px 0;
+    color: black;
+}
+
+.bgtext {
+    font-size: 28px;
+    font-weight: bold;
+    font-style: normal;
+    color: black;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}

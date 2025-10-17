@@ -1,0 +1,35 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    gap: 10px;
+}
+
+.child {
+    background-color: aquamarine;
+    margin: 10px;
+}
+
+wrapper {
+    display: grid;
+    grid-template-areas: "top top top" "inside middle" "bottom bottom bottom";
+}
+
+header {
+    grid-area: top;
+}
+
+nav {
+    grid-area: 1side;
+}
+
+main {
+    grid-area: middle;
+}
+
+footer {
+    grid-area: bottom;
+}

@@ -1,0 +1,98 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: orange;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    width: 150px;
+    text-decoration: none;
+    text-align: center;   
+}
+
+nav a:hover {  
+    background-color: white;
+    color: black;
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+.imgcontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    gap: 20px; 
+    flex: 1;
+}
+
+.imgbox {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow:0 4px 8px black;
+    text-align: left;
+    overflow: hidden;
+}
+
+.imgbox img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.imgbox h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.imgbox p {
+    margin: 0 10px 15px;
+    font-size: 12px;
+}
+
+aside p {
+    margin: 5px;
+}
+
+.footerlink {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: auto;
+    gap: 10px;
+}
+
+@media ONLY screen AND (max-width: 500px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .main-row {
+        flex-direction: column-reverse;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+}

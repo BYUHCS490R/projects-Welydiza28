@@ -8,7 +8,7 @@ body {
 }
 
 .sidebar {
-    width: 200px;
+    width: 100px;
 }
 
 .card {
@@ -17,4 +17,10 @@ body {
 
 .card img {
     width: 100%;
+}
+
+@media ONLY screen AND (max-width: 400px) {
+    body {
+        background-color: blue;
+    }
 }

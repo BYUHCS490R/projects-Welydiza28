@@ -1,0 +1,42 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container {
+    display: flex;
+}
+
+main {
+    flex: 3;
+}
+
+.sidebar {
+    flex: 1;
+    padding: 15px;
+    border: thin solid black;
+}
+
+.box {
+    margin: 5px auto;
+    border: thin solid black;
+    border-spacing: 0;
+    border-collapse: collapse;
+    background-color: bisque;
+}
+
+.box thead {
+    background-color: darkgoldenrod;
+}
+
+.box td, .box th {
+    border: thin solid black;
+    padding: 5px;
+}
+
+.box tbody tr:nth-child(even) {
+    background-color: brown;
+}
+
+.box tbody tr:nth-child(odd) {
+    background-color: bisque;
+}

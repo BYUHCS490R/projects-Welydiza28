@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Form </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1> FORMS </h1>
+</header>
+
+<main>
+    <form action="processing.html" method="get">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <div class="form-row">
+                <label for="firstNameInput"> First Name: </label>
+                <input type="text" name="firstName" id="firstNameInput">
+            </div>
+
+            <div class="form-row">
+                <label for="emailInput"> Email: </label>
+                <input type="email" name="email" id="emailInput">
+            </div>
+
+            <div class="form-row">
+                <label for="password"> Password: </label>
+                <input type="password" name="password" id="password">
+            </div>
+
+            <div class="form-row">
+                <label for="birthdate"> Birthdate: </label>
+                <input type="date" name="birthdate" id="birthdate">
+            </div>
+
+            <div class="form-row">
+                <label for="comments"> Comments: </label>
+                <textarea name="comments" id="comments"></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferences</legend>
+
+            <div class="form-row">
+                <label> Gender: </label>
+                <div class="options">
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label> Subscribe: </label>
+                <div class="options">
+                    <label><input type="checkbox" name="subscribe"> Yes, send me updates</label>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label for="country"> Country: </label>
+                <select name="country" id="country">
+                    <option value="">Select...</option>
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                    <option value="indonesia">Indonesia</option>
+                </select>
+            </div>
+        </fieldset>
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+</main>
+
+<footer>
+    <p> &copy; 2025 Samuel Ardiza </p>
+</footer>
+
+</body>
+</html>

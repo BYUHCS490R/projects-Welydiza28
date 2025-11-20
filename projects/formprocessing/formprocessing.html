@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Form </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1> FORMS </h1>
+</header>
+
+<main>
+    <div id="message"></div>
+    <form id="myForm" action="processing.html" method="get">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <div class="form-row">
+                <label for="name"> Name: </label>
+                <input type="text" name="name" id="name">
+            </div>
+
+            <div class="form-row">
+                <label for="emailInput"> Email: </label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div class="form-row">
+                <label for="password"> Password: </label>
+                <input type="password" name="password" id="password">
+            </div>
+
+            <div class="form-row">
+                <label for="age"> Age: </label>
+                <input type="number" name="age" id="age">
+            </div>
+        </fieldset>
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+</main>
+
+<footer>
+    <p> &copy; 2025 Samuel Ardiza </p>
+</footer>
+
+<script src="form.js"></script>
+</body>
+</html>

@@ -13,19 +13,19 @@
 </header>
 
 <main>
-    <form action="processing.html" method="get">
+    <form id="myForm" action="processing.html" method="get">
 
         <fieldset>
             <legend>Personal Information</legend>
 
             <div class="form-row">
-                <label for="firstNameInput"> First Name: </label>
-                <input type="text" name="firstName" id="firstNameInput">
+                <label for="name"> Name: </label>
+                <input type="text" name="name" id="name">
             </div>
 
             <div class="form-row">
                 <label for="emailInput"> Email: </label>
-                <input type="email" name="email" id="emailInput">
+                <input type="email" name="email" id="email">
             </div>
 
             <div class="form-row">
@@ -34,8 +34,8 @@
             </div>
 
             <div class="form-row">
-                <label for="birthdate"> Birthdate: </label>
-                <input type="date" name="birthdate" id="birthdate">
+                <label for="age"> Age: </label>
+                <input type="number" name="age" id="age">
             </div>
 
             <div class="form-row">
@@ -48,11 +48,9 @@
             <legend>Preferences</legend>
 
             <div class="form-row">
-                <label> Gender: </label>
-                <div class="options">
-                    <label><input type="radio" name="gender" value="male"> Male</label>
-                    <label><input type="radio" name="gender" value="female"> Female</label>
-                </div>
+                <label for="gender"> Gender: </label>
+                <label><input type="radio" name="gender" id="male"> Male</label>
+                <label><input type="radio" name="gender" id="female"> Female</label> 
             </div>
 
             <div class="form-row">
@@ -74,13 +72,62 @@
         </fieldset>
         <button type="submit" class="submit-btn">Submit</button>
     </form>
-    <p> 1. AJAX is a technique that make a webpage send and receive data from a server. </p>
-    <p> 2. For organizing and it also help for faster loading. </p>
 </main>
 
 <footer>
     <p> &copy; 2025 Samuel Ardiza </p>
 </footer>
 
+<script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+        const age = document.getElementById("age").value;
+        const gender = document.querySelector('input[name="gender"]:checked')?.value || "";
+        const subscribe = document.querySelector('input[name="subscribe"]').checked;
+        const country = document.getElementById("country").value;
+        const comments = document.getElementById("comments").value; 
+
+        if (!name) {
+            alert("Please provide your name!");
+            return;
+        }
+
+        if (!password || password.length < 8) {
+            alert("Please enter a password with a minimum 8 characters!");
+            return;
+        }
+
+        if (!age || age < 18) {
+            alert("You need to be 18 years or older!");
+            return;
+        }
+
+        if (!gender) {
+            alert("Please choose your gender!");
+            return;
+        }
+
+        if (!country) {
+            alert("Please choose your country!");
+            return;
+        }
+
+        const data = {
+            name: name,
+            email: email,
+            password: password,
+            age: age,
+            gender: gender,
+            subscribe: subscribe,
+            country: country,
+            comments: comments
+        }
+
+        console.log(data);;
+    });
+</script>
 </body>
 </html>

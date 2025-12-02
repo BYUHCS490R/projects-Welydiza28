@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Games </title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <Header>
+        <h1> My Top Favorite Game </h1>
+        <nav class="content">
+            <a href="index.html" class="active"> Home </a>
+            <a href="gtav.html"> GTA V </a>
+            <a href="rdr.html"> Red Dead Redemption 2 </a>
+            <a href="sev.html"> Sniper Elite V </a>
+            <a href="mhw.html"> Monster Hunter World </a>
+            <a href="table.html"> World Ranking </a>
+        </nav>
+    </Header>
+
+    <div class="content">
+        <aside class="sidebar">
+            <div id="message"></div>
+            <form id="myForm" action="processing.html" method="get">
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <div class="form-row">
+                        <label for="name"> Name: </label>
+                        <input type="text" name="name" id="name">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="emailInput"> Email: </label>
+                        <input type="email" name="email" id="email">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="favGame"> Favorite Game: </label>
+                        <input type="text" name="favgame" id="favgame">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="age"> Age: </label>
+                        <input type="number" name="age" id="age">
+                    </div>
+                </fieldset>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </aside>
+
+        <main>
+            <article>
+                <img src="game.png" alt="Game" class="img">
+                <h2> Games </h2>
+                <p> Games are a big part of entertainment today for most people and it is a fun way to relax and enjoy their free time. Many games make you think or plan or solve problems, which can help yu on making better decisions in your life. Modern video games have cool graphics, interesting stories, and characters making your experience more exciting. Games also bring people together by playing it onlines or in person. I want to share my top personal list of games that I have played. </p>
+            </article>
+        </main>
+    </div>
+    
+    <footer>
+        <p> &copy; 2025 Samuel Ardiza </p>
+    </footer>
+
+    <script src="form.js"></script>
+</body>
+</html>

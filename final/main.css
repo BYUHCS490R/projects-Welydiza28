@@ -115,6 +115,33 @@ legend {
     border-radius: 5px;
 }
 
+.container {
+    display: flex;
+}
+
+.sidebar {
+    flex: 1;
+    padding: 15px;
+    border: thin solid black;
+}
+
+.box {
+    margin: 5px auto;
+    border: thin solid black;
+    border-spacing: 0;
+    border-collapse: collapse;
+    background-color: rgb(165, 1, 19);
+}
+
+.box thead {
+    background-color: rgb(33, 29, 33);
+}
+
+.box td, .box th {
+    border: thin solid black;
+    padding: 5px;
+}
+
 @media print {
     nav {
         display: none;

@@ -42,26 +42,14 @@ nav a:hover {
     padding: 15px;
 }
 
-.imgcontainer {
-    display: flex; 
-    gap: 5px;
-    flex-wrap: wrap;
-    padding: 10px;
-    justify-content: flex-start;
-}
-
 .imgbox {
-    background-color: rgb(212,25,54);
-    border-radius: 8px;
-    box-shadow:0 25px 50px black;
     text-align: left;
-    overflow: hidden;
-    width: 300px;
+    width: 75%;
     padding: 16px;
 }
 
 .img {
-  width: 100%;
+  width: 50%;
   height: auto;
   display: block;
 }
